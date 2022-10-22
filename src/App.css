@@ -8,9 +8,14 @@ body {
     color: antiquewhite;
 }
 
+h1 {
+    display: inline;
+}
+
 header {
+    height: 300px;
+    width: 400px;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px #6e82a2;
     margin: auto;
     margin-top: 40px;
     padding: 20px;
@@ -18,5 +23,17 @@ header {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.btn {
+    width: 70px;
+    padding: 5px;
+    background-color: transparent;
+    color: antiquewhite;
+    border-radius: 10px;
+}
+
+.btn:active {
+    transform: scale(95%);
 }

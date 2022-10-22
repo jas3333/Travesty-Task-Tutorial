@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import Button from './Button';
 
 const Header = ({ title, color }) => {
     const headerStyle = {
@@ -6,9 +7,14 @@ const Header = ({ title, color }) => {
         boxShadow: `2px 2px 5px ${color}`,
     };
 
+    const onClick = () => {
+        console.log('click');
+    };
+
     return (
         <header style={headerStyle}>
             <h1>{title}</h1>
+            <Button onClick={onClick} />
         </header>
     );
 };
