@@ -6,8 +6,13 @@ const Header = ({ title, color }) => {
         console.log('click');
     };
 
+    const style = {
+        border: `solid 2px ${color}`,
+        boxShadow: `3px 3px 10px ${color}`,
+    };
+
     return (
-        <header className='header'>
+        <header className='header' style={style}>
             <h1>{title}</h1>
             <Button onClick={onClick} />
         </header>
