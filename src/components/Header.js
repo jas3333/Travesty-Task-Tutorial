@@ -8,7 +8,7 @@ const Header = ({ title, color }) => {
 
     const style = {
         border: `solid 2px ${color}`,
-        boxShadow: `3px 3px 10px ${color}`,
+        boxShadow: `1px 1px 10px ${color}`,
     };
 
     return (
